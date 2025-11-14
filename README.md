@@ -3,7 +3,7 @@
 Welcome to the official website repository for **Stayzeef Industries**, showcasing engineering projects, portfolio, and open-source philosophy.
 
 ## 🌐 Live Website
-Visit us at: [stayzeef.github.io](https://stayzeef.github.io)
+Visit us at: [stayzeef.com](https://stayzeef.com)
 
 ## 📁 Project Structure
 
