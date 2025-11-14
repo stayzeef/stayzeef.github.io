@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Projects</title>
+    <title>Portfolio - Stayzeef Industries</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="bg-gray-900 text-gray-100">
     <!-- Navbar -->
@@ -12,13 +13,14 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
-                    <span class="text-xl font-bold text-white">Portfolio</span>
+                    <img src="assets/images/logobw.png" alt="Stayzeef Industries" class="logo">
+                    <span class="text-xl font-bold text-white brand-text">Stayzeef Industries</span>
                 </div>
                 <div class="flex space-x-4">
-                    <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                    <a href="portfolio.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
-                    <a href="resume.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Resume</a>
-                    <a href="shop.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Shop</a>
+                    <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Home</a>
+                    <a href="portfolio.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Portfolio</a>
+                    <a href="resume.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Resume</a>
+                    <a href="shop.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Shop</a>
                 </div>
             </div>
         </div>
@@ -26,55 +28,25 @@
 
     <!-- Portfolio Content -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 class="text-4xl font-bold text-white mb-8">My Projects</h1>
+        <h1 class="text-4xl font-bold text-white mb-8">Stayzeef Industries Projects</h1>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- RC-Gamepad-Dongle Project Card -->
-            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 project-card">
                 <div class="p-6">
                     <h2 class="text-2xl font-bold text-white mb-2">RC-Gamepad-Dongle</h2>
                     <p class="text-gray-400 mb-4">
-                        A wireless gamepad dongle for RC (remote control) applications, enabling seamless controller connectivity.
+                        Complete RC-to-USB joystick solution that converts RC receiver signals (IBUS, PPM, SBUS, CRSF, DSMX, DSM2, FPORT) into standard USB HID joystick inputs. Features Arduino-based firmware with a desktop configurator app for easy setup. Supports 6 axes, 32 buttons, and 2 hat switches - perfect for flight simulators, robot control, and custom gaming setups.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded">Hardware</span>
-                        <span class="bg-green-600 text-white text-xs font-semibold px-2 py-1 rounded">Embedded</span>
-                        <span class="bg-purple-600 text-white text-xs font-semibold px-2 py-1 rounded">IoT</span>
+                        <span class="bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded">Arduino</span>
+                        <span class="bg-green-600 text-white text-xs font-semibold px-2 py-1 rounded">USB HID</span>
+                        <span class="bg-purple-600 text-white text-xs font-semibold px-2 py-1 rounded">RC Protocol</span>
+                        <span class="bg-yellow-600 text-white text-xs font-semibold px-2 py-1 rounded">C++</span>
+                        <span class="bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">Python</span>
+                        <span class="bg-gray-600 text-white text-xs font-semibold px-2 py-1 rounded">Cross-Platform</span>
                     </div>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 font-medium">
-                        View Details →
-                    </a>
-                </div>
-            </div>
-
-            <!-- Placeholder Project Cards -->
-            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-                <div class="p-6">
-                    <h2 class="text-2xl font-bold text-white mb-2">Project Two</h2>
-                    <p class="text-gray-400 mb-4">
-                        Description of another exciting project showcasing innovative solutions.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-yellow-600 text-white text-xs font-semibold px-2 py-1 rounded">Web</span>
-                        <span class="bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">API</span>
-                    </div>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 font-medium">
-                        View Details →
-                    </a>
-                </div>
-            </div>
-
-            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-                <div class="p-6">
-                    <h2 class="text-2xl font-bold text-white mb-2">Project Three</h2>
-                    <p class="text-gray-400 mb-4">
-                        Another project demonstrating technical expertise and creative problem-solving.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-indigo-600 text-white text-xs font-semibold px-2 py-1 rounded">Mobile</span>
-                        <span class="bg-pink-600 text-white text-xs font-semibold px-2 py-1 rounded">Design</span>
-                    </div>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 font-medium">
+                    <a href="https://github.com/stayzeef/RC-Gamepad-Dongle" class="text-blue-400 hover:text-blue-300 font-medium">
                         View Details →
                     </a>
                 </div>
