@@ -12,6 +12,12 @@
     <link rel="manifest" href="assets/images/favicon/site.webmanifest">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/styles.css">
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+    </script>
 </head>
 <body class="bg-gray-900 text-gray-100">
     <!-- Navbar -->
@@ -23,19 +29,38 @@
                         <img src="assets/images/logobw.png" alt="Koen Schreij" class="h-10 w-10 rounded-lg hover:opacity-80 transition duration-300">
                     </a>
                 </div>
-                <div class="flex space-x-4">
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-4">
                     <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Home</a>
                     <a href="portfolio.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Portfolio</a>
                     <a href="resume.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Resume</a>
                     <a href="shop.html" class="text-white bg-gray-900 px-3 py-2 rounded-md text-sm font-medium nav-link" aria-current="page">Shop</a>
                     <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Contact</a>
                 </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button onclick="toggleMobileMenu()" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-700">
+                    <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="portfolio.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Portfolio</a>
+                    <a href="resume.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Resume</a>
+                    <a href="shop.html" class="text-white bg-gray-900 block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Shop</a>
+                    <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Shop Content -->
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="bg-gray-800 rounded-lg shadow-lg p-8">
             <!-- Coming Soon Notice -->
             <div class="bg-yellow-900 border border-yellow-700 rounded-lg p-6 mb-8">
