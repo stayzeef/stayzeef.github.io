@@ -1,0 +1,14 @@
+# robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://stayzeef.com/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Block crawling of any future admin areas
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /assets/documents/

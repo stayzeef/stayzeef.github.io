@@ -3,8 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Resume of Koen Schreij - Electrical Engineering Technology student with 10+ years management experience and expertise in electronics, PCB design, and embedded systems.">
+    <meta name="description" content="Professional resume of Koen Schreij - Electrical Engineering Technology student with 4.0 GPA, seeking entry-level engineering opportunities.">
+    <meta name="keywords" content="electrical engineering, resume, portfolio, electronics, Arduino, 3D printing, engineering student">
+    <meta property="og:title" content="Resume - Koen Schreij">
+    <meta property="og:description" content="Professional resume showcasing electrical engineering expertise and project experience.">
+    <meta property="og:image" content="https://stayzeef.com/assets/images/logobw.png">
+    <meta property="og:url" content="https://stayzeef.com/resume.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="#1f2937">
+    <link rel="canonical" href="https://stayzeef.com/resume.html">
     <title>Resume - Koen Schreij</title>
+    <!-- JSON-LD Structured Data for Resume -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Koen Schreij",
+      "jobTitle": "Electrical Engineering Technology Student",
+      "email": "koenschreij@gmail.com",
+      "telephone": "+1-973-641-3405",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Naples",
+        "addressRegion": "FL"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Excelsior University",
+        "description": "Bachelor of Science in Electrical Engineering Technology"
+      },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Bachelor of Science in Electrical Engineering Technology",
+        "credentialCategory": "degree",
+        "educationalLevel": "Bachelor's degree"
+      },
+      "knowsAbout": [
+        "Electronics Design", "Arduino Programming", "3D Printing", "CAD Design", 
+        "Project Management", "Customer Service", "Technical Support", "Quality Assurance"
+      ],
+      "workExperience": [
+        {
+          "@type": "WorkExperience",
+          "jobTitle": "Sales Representative",
+          "employer": "BJ's Wholesale Club",
+          "startDate": "2022-03",
+          "description": "Customer service and sales in retail environment"
+        }
+      ]
+    }
+    </script>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -12,6 +61,7 @@
     <link rel="manifest" href="assets/images/favicon/site.webmanifest">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/enhanced-styles.css">
     <script>
     tailwind.config = {
       theme: {
@@ -30,50 +80,54 @@
     </script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
-    <nav class="bg-gray-800 border-b border-gray-700">
+        <!-- Skip Navigation -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded-md z-50">Skip to main content</a>
+    
+    <!-- Navbar -->
+    <nav class="bg-gray-800 border-b border-gray-700" role="navigation" aria-label="Main navigation">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
-                    <a href="index.html">
-                        <img src="assets/images/logobw.png" alt="Koen Schreij" class="h-10 w-10 rounded-lg hover:opacity-80 transition duration-300">
+                    <a href="index.html" aria-label="Go to homepage">
+                        <img src="assets/images/logobw.png" alt="Koen Schreij Logo" class="h-10 w-10 rounded-lg hover:opacity-80 transition duration-300">
                     </a>
                 </div>
                 <!-- Desktop Navigation -->
-                <div class="hidden md:flex space-x-4">
-                    <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Home</a>
-                    <a href="portfolio.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Portfolio</a>
-                    <a href="resume.html" class="text-white bg-gray-900 px-3 py-2 rounded-md text-sm font-medium nav-link" aria-current="page">Resume</a>
-                    <a href="shop.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Shop</a>
-                    <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Contact</a>
+                <div class="hidden md:flex space-x-4" role="menubar">
+                    <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link focus:ring-2 focus:ring-blue-500 focus:outline-none" role="menuitem">Home</a>
+                    <a href="portfolio.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link focus:ring-2 focus:ring-blue-500 focus:outline-none" role="menuitem">Portfolio</a>
+                    <a href="resume.html" class="text-white bg-gray-900 px-3 py-2 rounded-md text-sm font-medium nav-link focus:ring-2 focus:ring-blue-500 focus:outline-none" aria-current="page" role="menuitem">Resume</a>
+                    <a href="shop.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link focus:ring-2 focus:ring-blue-500 focus:outline-none" role="menuitem">Shop</a>
+                    <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link focus:ring-2 focus:ring-blue-500 focus:outline-none" role="menuitem">Contact</a>
                 </div>
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
-                    <button onclick="toggleMobileMenu()" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <button onclick="toggleMobileMenu()" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-white" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle mobile menu">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
             </div>
             <!-- Mobile Navigation Menu -->
-            <div id="mobile-menu" class="md:hidden hidden">
+            <div id="mobile-menu" class="md:hidden hidden" role="menu">
                 <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-700">
-                    <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                    <a href="portfolio.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Portfolio</a>
-                    <a href="resume.html" class="text-white bg-gray-900 block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Resume</a>
-                    <a href="shop.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Shop</a>
-                    <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                    <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium focus:ring-2 focus:ring-blue-500 focus:outline-none" role="menuitem">Home</a>
+                    <a href="portfolio.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium focus:ring-2 focus:ring-blue-500 focus:outline-none" role="menuitem">Portfolio</a>
+                    <a href="resume.html" class="text-white bg-gray-900 block px-3 py-2 rounded-md text-base font-medium focus:ring-2 focus:ring-blue-500 focus:outline-none" aria-current="page" role="menuitem">Resume</a>
+                    <a href="shop.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium focus:ring-2 focus:ring-blue-500 focus:outline-none" role="menuitem">Shop</a>
+                    <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium focus:ring-2 focus:ring-blue-500 focus:outline-none" role="menuitem">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <main id="main-content" role="main" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="bg-gray-800 rounded-lg shadow-lg p-8">
             
             <div class="text-center border-b border-gray-700 pb-6 mb-8">
                 <div class="mb-6">
-                    <img src="assets/images/me.jpeg" alt="Koen Schreij" class="w-32 h-32 rounded-full mx-auto border-4 border-gray-600 shadow-lg">
+                    <img src="assets/images/me.jpeg" alt="Professional photo of Koen Schreij" class="w-32 h-32 rounded-full mx-auto border-4 border-gray-600 shadow-lg" loading="lazy">
                 </div>
                 <h1 class="text-4xl font-bold text-white mb-2">Koen Schreij</h1>
                 <p class="text-lg text-blue-400 mb-4">
@@ -82,13 +136,13 @@
                     Naples, FL 34114 | 
                     <a href="http://Linkedin.com/in/KoenSchreij" target="_blank" rel="noopener noreferrer" class="hover:underline">LinkedIn</a>
                 </p>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto text-left">
                     Accomplished Electrical Engineering Technology student with 10+ years of managerial experience, transitioning from hospitality leadership to a hands-on engineering career. Seeking to apply proven skills in project management, team leadership, and complex systems operations to a role in electronics or automation.
                 </p>
             </div>
 
-            <div class="mb-8">
-                <h2 class="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">Education</h2>
+            <section class="mb-8" aria-labelledby="education-heading">
+                <h2 id="education-heading" class="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">Education</h2>
                 <div class="mb-6">
                     <h3 class="text-xl font-semibold text-white">Bachelor of Science, Electrical Engineering Technology</h3>
                     <p class="text-gray-400 mb-2">Excelsior University - Albany, NY | (August 2021 - Present) </p>
@@ -102,10 +156,10 @@
                     <h3 class="text-xl font-semibold text-white">Associates of Applied Science, Leisure and Hospitality</h3>
                     <p class="text-gray-400 mb-2">Da Vinci College - Dordrecht, NL | (2010 - 2012)</p>
                 </div>
-            </div>
+            </section>
 
-            <div class="mb-8">
-                <h2 class="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">Technical Skills</h2>
+            <section class="mb-8" aria-labelledby="skills-heading">
+                <h2 id="skills-heading" class="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">Technical Skills</h2>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
                     <div class="bg-gray-700 rounded p-2"><strong class="text-blue-300 block">Design & Simulation</strong>KiCad, Altium Designer, LTspice, MATLAB, Simulink, Multisim, AutoCAD</div>
                     <div class="bg-gray-700 rounded p-2"><strong class="text-blue-300 block">Hardware & Embedded</strong>Microcontrollers, PLC Programming, FPGA Design, PCB Design, Embedded Systems, Sensors</div>
@@ -195,64 +249,61 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 border-t border-gray-700 py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- About Section -->
-                <div class="text-center md:text-left">
-                    <h3 class="text-lg font-semibold text-white mb-3">Koen Schreij</h3>
-                    <p class="text-gray-400 text-sm">
-                        Electrical Engineering Technology Student specializing in electronics, embedded systems, and open-source hardware development.
-                    </p>
-                </div>
-                
-                <!-- Quick Links -->
-                <div class="text-center">
-                    <h3 class="text-lg font-semibold text-white mb-3">Quick Links</h3>
-                    <div class="space-y-2">
-                        <a href="portfolio.html" class="block text-gray-400 hover:text-white transition duration-300">Portfolio</a>
-                        <a href="resume.html" class="block text-gray-400 hover:text-white transition duration-300">Resume</a>
-                        <a href="shop.html" class="block text-gray-400 hover:text-white transition duration-300">Shop</a>
-                        <a href="contact.html" class="block text-gray-400 hover:text-white transition duration-300">Contact</a>
-                    </div>
-                </div>
-                
-                <!-- Social Links -->
-                <div class="text-center md:text-right">
-                    <h3 class="text-lg font-semibold text-white mb-3">Connect</h3>
-                    <div class="flex justify-center md:justify-end space-x-4">
-                        <a href="https://github.com/stayzeef" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.printables.com/@stayzeef/models" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2L2 7v10l10 5 10-5V7l-10-5z"/>
-                            </svg>
-                        </a>
-                        <a href="http://linkedin.com/in/KoenSchreij" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23-2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="text-center mt-8">
+                <a href="assets/resume.pdf" class="btn-primary text-white font-bold py-3 px-6 rounded-lg transition duration-300 mr-4 focus:ring-2 focus:ring-blue-500 focus:outline-none" aria-label="Download Koen Schreij's resume as PDF" download>
+                    📄 Download Resume
+                </a>
+                <a href="contact.html" class="btn-secondary text-white font-bold py-3 px-6 rounded-lg transition duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" aria-label="Contact Koen Schreij">
+                    ✉️ Contact Me
+                </a>
             </div>
-            
-            <!-- Bottom Section -->
-            <div class="mt-8 pt-6 border-t border-gray-700">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-400 text-sm">
-                        © 2025 Koen Schreij. Built with passion for open-source engineering.
-                    </p>
-                    <p class="text-gray-400 text-sm mt-2 md:mt-0">
-                        Naples, FL • Available for Engineering Opportunities
-                    </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 border-t border-gray-700 mt-16" role="contentinfo">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">&copy; 2024 Koen Schreij. All rights reserved.</p>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="https://github.com/stayzeef" class="text-gray-400 hover:text-white transition duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/KoenSchreij" class="text-gray-400 hover:text-white transition duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.printables.com/@stayzeef/models" class="text-gray-400 hover:text-white transition duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" aria-label="Printables Profile" target="_blank" rel="noopener noreferrer">
+                        <span class="text-lg">🖨️</span>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle with accessibility
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const button = document.querySelector('[aria-controls="mobile-menu"]');
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            
+            mobileMenu.classList.toggle('hidden');
+            button.setAttribute('aria-expanded', !isOpen);
+        }
+        
+        // Keyboard navigation improvements
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    toggleMobileMenu();
+                }
+            }
+        });
+    </script>
 </body>
 </html>
