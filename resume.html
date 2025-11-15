@@ -26,32 +26,112 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Naples",
-        "addressRegion": "FL"
+        "addressRegion": "FL",
+        "postalCode": "34114"
       },
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "Excelsior University",
-        "description": "Bachelor of Science in Electrical Engineering Technology"
-      },
-      "hasCredential": {
-        "@type": "EducationalOccupationalCredential",
-        "name": "Bachelor of Science in Electrical Engineering Technology",
-        "credentialCategory": "degree",
-        "educationalLevel": "Bachelor's degree"
-      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Excelsior University",
+          "location": "Albany, NY",
+          "description": "Bachelor of Science in Electrical Engineering Technology"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Da Vinci College",
+          "location": "Dordrecht, NL",
+          "description": "Associates of Applied Science, Leisure and Hospitality"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Bachelor of Science in Electrical Engineering Technology",
+          "credentialCategory": "degree",
+          "educationalLevel": "Bachelor's degree",
+          "issuedBy": "Excelsior University",
+          "dateCreated": "2025-05"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Certified Revenue Management Executive (CRME)",
+          "credentialCategory": "certification",
+          "issuedBy": "Hospitality Sales & Marketing Association International (HSMAI)"
+        }
+      ],
       "knowsAbout": [
-        "Electronics Design", "Arduino Programming", "3D Printing", "CAD Design", 
-        "Project Management", "Customer Service", "Technical Support", "Quality Assurance"
+        "Electronics Design", "PCB Design", "Arduino Programming", "Embedded Systems", "Power Electronics",
+        "3D Printing", "CAD Design", "Fusion 360", "Onshape", "EasyEDA", "KiCad",
+        "C/C++ Programming", "Python", "Assembly Language", "Verilog", "MATLAB", "Simulink",
+        "STM32", "ESP32", "ESP8266", "Microcontrollers", "Digital Logic Circuits",
+        "Oscilloscope Usage", "Spectrum Analyzer", "SMD Soldering", "Through-hole Soldering",
+        "Control Systems", "Digital Communications", "Analog Communications", "PLC Programming",
+        "Docker", "Linux", "Git", "Bash Scripting", "HTML/CSS", "Web Development",
+        "Revenue Management", "Project Management", "Team Leadership", "Systems Administration",
+        "Data Analysis", "Process Optimization", "Quality Assurance", "Financial Management"
       ],
       "workExperience": [
         {
           "@type": "WorkExperience",
-          "jobTitle": "Sales Representative",
-          "employer": "BJ's Wholesale Club",
-          "startDate": "2022-03",
-          "description": "Customer service and sales in retail environment"
+          "jobTitle": "Sales Coordinator",
+          "employer": "Dream Hotel Group, LLC",
+          "startDate": "2019-11",
+          "endDate": "2020-03",
+          "location": "New York, NY",
+          "description": "Technical project management and client liaison"
+        },
+        {
+          "@type": "WorkExperience",
+          "jobTitle": "Area Reservations Manager",
+          "employer": "Dream Hotel Group, LLC",
+          "startDate": "2017-09",
+          "endDate": "2019-11",
+          "location": "New York, NY",
+          "description": "Systems administration and technical team leadership"
+        },
+        {
+          "@type": "WorkExperience",
+          "jobTitle": "Front Office & Revenue Manager",
+          "employer": "The Grand Summit Hotel",
+          "startDate": "2016-02",
+          "endDate": "2017-09",
+          "location": "Summit, NJ",
+          "description": "Operations systems engineering and data analysis"
+        },
+        {
+          "@type": "WorkExperience",
+          "jobTitle": "Front Desk Supervisor",
+          "employer": "The Grand Summit Hotel",
+          "startDate": "2015-03",
+          "endDate": "2016-02",
+          "location": "Summit, NJ",
+          "description": "Technical operations leadership and system optimization"
+        },
+        {
+          "@type": "WorkExperience",
+          "jobTitle": "Guest Service Agent",
+          "employer": "The Grand Summit Hotel",
+          "startDate": "2013-10",
+          "endDate": "2015-03",
+          "location": "Summit, NJ",
+          "description": "Multi-system operations and technical troubleshooting"
+        },
+        {
+          "@type": "WorkExperience",
+          "jobTitle": "Manager's Assistant",
+          "employer": "Van den Hout Automaten",
+          "startDate": "2012-10",
+          "endDate": "2013-08",
+          "location": "Dordrecht, NL",
+          "description": "Data analysis and process optimization"
         }
-      ]
+      ],
+      "seeks": {
+        "@type": "Occupation",
+        "name": "Electrical Engineer",
+        "occupationLocation": "United States",
+        "responsibilities": "Entry-level engineering position in electronics or automation"
+      }
     }
     </script>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
@@ -139,6 +219,13 @@
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto text-left">
                     Accomplished Electrical Engineering Technology student with 10+ years of managerial experience, transitioning from hospitality leadership to a hands-on engineering career. Seeking to apply proven skills in project management, team leadership, and complex systems operations to a role in electronics or automation.
                 </p>
+                
+                <!-- Download Resume Button -->
+                <div class="text-center mt-6">
+                    <a href="assets/resume.pdf" class="btn-primary text-white font-bold py-3 px-6 rounded-lg transition duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" aria-label="Download Koen Schreij's resume as PDF" download>
+                        📄 Download Resume
+                    </a>
+                </div>
             </div>
 
             <section class="mb-8" aria-labelledby="education-heading">
@@ -158,15 +245,44 @@
                 </div>
             </section>
 
-            <section class="mb-8" aria-labelledby="skills-heading">
-                <h2 id="skills-heading" class="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">Technical Skills</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                    <div class="bg-gray-700 rounded p-2"><strong class="text-blue-300 block">Design & Simulation</strong>KiCad, Altium Designer, LTspice, MATLAB, Simulink, Multisim, AutoCAD</div>
-                    <div class="bg-gray-700 rounded p-2"><strong class="text-blue-300 block">Hardware & Embedded</strong>Microcontrollers, PLC Programming, FPGA Design, PCB Design, Embedded Systems, Sensors</div>
-                    <div class="bg-gray-700 rounded p-2"><strong class="text-blue-300 block">Programming</strong>C/C++, Python, Verilog, C#, Java, Linux</div>
-                    <div class="bg-gray-700 rounded p-2"><strong class="text-blue-300 block">Core Competencies</strong>Project Management, Circuit Design, Systems Analysis, Debugging, Schematics</div>
+            <section class="mb-8" aria-labelledby="certifications-heading">
+                <h2 id="certifications-heading" class="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">Professional Certifications</h2>
+                <div class="bg-gray-700 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-white mb-2">Certified Revenue Management Executive (CRME)</h3>
+                    <p class="text-gray-400 mb-2">Hospitality Sales & Marketing Association International (HSMAI)</p>
+                    <p class="text-gray-300 text-sm">Advanced certification in revenue optimization, pricing strategies, and data analytics for hospitality management</p>
                 </div>
-            </div>
+            </section>
+
+            <section class="mb-8" aria-labelledby="engineering-skills-heading">
+                <h2 id="engineering-skills-heading" class="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">Engineering & Technical Skills</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 text-center">
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-blue-300 block">Design & Simulation</strong>KiCad, EasyEDA, Altium Designer, LTspice, MATLAB, Simulink, Multisim</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-blue-300 block">CAD & 3D Design</strong>Fusion 360, Onshape, AutoCAD, 3D Printing, Mechanical Design</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-blue-300 block">Embedded Systems</strong>Arduino, ESP32, ESP8266, STM32, Microcontrollers, Embedded C/C++</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-blue-300 block">Hardware & Assembly</strong>PCB Design, SMD & Through-hole Soldering, Digital Logic Circuits, Power Electronics</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-blue-300 block">Test & Measurement</strong>Oscilloscope Usage, Spectrum Analyzer, Testing & Validation, Debugging</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-blue-300 block">Programming</strong>C/C++, Python, Assembly, Verilog, C#, Java, Bash Scripting</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-blue-300 block">Systems & Control</strong>Control Systems, Digital & Analog Communications, PLC Programming, FPGA Design</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-blue-300 block">Web Development</strong>HTML/CSS, JavaScript, Git, Web Development, Frontend Design</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-blue-300 block">DevOps & Cloud</strong>Docker, Linux, Cloudflare, Git Version Control, System Administration</div>
+                </div>
+            </section>
+
+            <section class="mb-8" aria-labelledby="management-skills-heading">
+                <h2 id="management-skills-heading" class="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">Management & Leadership Skills</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 text-center">
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-green-300 block">Revenue Management</strong>CRME Certified, Pricing Strategy, Yield Optimization, Market Analysis, Financial Forecasting</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-green-300 block">Team Leadership</strong>Staff Development, Performance Management, Training & Mentoring, Succession Planning</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-green-300 block">Operations Management</strong>Process Optimization, Quality Assurance, Inventory Control, Vendor Relations, SOP Development</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-green-300 block">Financial Management</strong>Budget Planning, P&L Responsibility, Cost Control, ROI Analysis, Capital Planning</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-green-300 block">Project Management</strong>Timeline Planning, Resource Allocation, Risk Assessment, Stakeholder Communication, Multi-site Coordination</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-green-300 block">Customer Experience</strong>Service Excellence, Guest Relations, Complaint Resolution, Satisfaction Metrics, Loyalty Programs</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-green-300 block">Strategic Planning</strong>Market Research, Competitive Analysis, Business Development, Growth Strategies, KPI Development</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-green-300 block">Technology Integration</strong>System Implementation, Digital Transformation, Data Analytics, Automation, Process Digitization</div>
+                    <div class="bg-gray-700 rounded p-2"><strong class="text-green-300 block">Crisis Management</strong>Emergency Response, Business Continuity, Risk Mitigation, Team Communication, Recovery Planning</div
+                </div>
+            </section>
 
             <div class="mb-8">
                 <h2 class="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">Key Engineering Projects</h2>
@@ -178,7 +294,19 @@
                         <li>Project involves system design, schematic capture, PCB layout (EasyEDA), and embedded C++ programming.</li>
                         <li>Managing all aspects of the project, including component sourcing, 3D-printed case design, and documentation.</li>
                     </ul>
+                </div>                
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-white">Power Electronics System Design</h3>
+                    <p class="text-gray-400 mb-2">Academic Group Project</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1 pl-4">
+                        <li>Designed and simulated a complete power conversion system (Rectifier, Buck Converter, DC-AC Inverter) in Multisim and MATLAB/Simulink as part of a 4-person team.</li>
+                        <li>Personally responsible for the design and simulation of the buck converter, achieving 92% efficiency in simulation.</li>
+                        <li>Collaborated on a final 30-page progress report, detailing all design choices, mathematical models, and simulation results.</li>
+                    </ul>
                 </div>
+                
+
                 </div>
 
             <div class="mb-8">
@@ -188,9 +316,10 @@
                     <h3 class="text-xl font-semibold text-white">Sales Coordinator</h3>
                     <p class="text-gray-400 mb-2">Dream Hotel Group, LLC - New York, NY | (Nov 2019 - Mar 2020)</p>
                     <ul class="list-disc list-inside text-gray-300 space-y-1 pl-4">
-                        <li>Managed key client accounts and long-term project pipelines, exceeding established sales and revenue goals.</li>
-                        <li>Developed and executed strategic sales plans, converting new leads into established corporate accounts.</li>
-                        <li>Served as the primary technical liaison between clients and operations teams, translating client requirements into actionable service-level agreements.</li>
+                        <li>Managed complex project pipelines and client requirements, utilizing data analysis to exceed revenue targets and optimize resource allocation.</li>
+                        <li>Developed strategic implementation plans and executed systematic approaches to convert prospects into long-term partnerships through technical solution design.</li>
+                        <li>Served as technical liaison between clients and operations teams, translating business requirements into detailed technical specifications and service-level agreements.</li>
+                        <li>Collaborated cross-functionally to troubleshoot operational challenges and implement process improvements that enhanced system efficiency and client satisfaction.</li>
                     </ul>
                 </div>
 
@@ -198,10 +327,11 @@
                     <h3 class="text-xl font-semibold text-white">Area Reservations Manager</h3>
                     <p class="text-gray-400 mb-2">Dream Hotel Group, LLC - New York, NY | (Sep 2017 - Nov 2019)</p>
                     <ul class="list-disc list-inside text-gray-300 space-y-1 pl-4">
-                        <li>Managed and performed system administration and data integrity audits across multiple critical platforms (PMS, CRS, RMS).</li>
-                        <li>Led a team of Reservations Agents, overseeing all aspects of the personnel lifecycle, including hiring, training, performance management, and scheduling.</li>
-                        <li>Acted as a key project manager for executive leadership, collaborating with Directors of Revenue to execute strategic objectives across multiple properties.</li>
-                        <li>Implemented and managed quality control (QC) processes, performing daily audits to identify and correct data errors and system-level conflicts.</li>
+                        <li>Administered multi-platform systems integration (PMS, CRS, RMS), ensuring data integrity and optimal performance across critical business applications.</li>
+                        <li>Led technical team of Reservations Agents, managing full project lifecycle including system training, performance optimization, workflow design, and resource scheduling.</li>
+                        <li>Executed strategic technical initiatives for executive leadership, collaborating with Directors to implement system upgrades and process automation across multiple facilities.</li>
+                        <li>Designed and implemented comprehensive quality assurance protocols, conducting systematic data validation and error detection processes to maintain system reliability.</li>
+                        <li>Developed automated reporting systems and key performance indicators to monitor operational efficiency and identify areas for continuous improvement.</li>
                     </ul>
                 </div>
 
@@ -209,24 +339,37 @@
                     <h3 class="text-xl font-semibold text-white">Front Office & Revenue Manager</h3>
                     <p class="text-gray-400 mb-2">The Grand Summit Hotel - Summit, NJ | (Feb 2016 - Sep 2017)</p>
                     <ul class="list-disc list-inside text-gray-300 space-y-1 pl-4">
-                        <li>Directed all front office operations with a focus on technical systems and revenue management, controlling room inventory and pricing to maximize profitability.</li>
-                        <li>Managed and developed a cross-functional team, overseeing operations, scheduling, and continuous professional development.</li>
-                        <li>Analyzed service and satisfaction data to identify systemic trends, developing and implementing process improvements to address root-cause issues.</li>
-                        <li>Coordinated inter-departmental logistics with Maintenance and Housekeeping to ensure operational efficiency and asset preservation.</li>
+                        <li>Engineered comprehensive operational systems for front office management, implementing algorithmic pricing controls and inventory optimization to maximize revenue efficiency.</li>
+                        <li>Designed and managed cross-functional team workflows, developing systematic approaches to resource scheduling, performance monitoring, and continuous process improvement.</li>
+                        <li>Conducted advanced data analysis on operational metrics and customer satisfaction data, identifying systemic patterns and implementing evidence-based solutions to optimize system performance.</li>
+                        <li>Coordinated complex inter-departmental logistics and resource allocation with Maintenance and Housekeeping teams, ensuring optimal operational efficiency and asset management.</li>
                     </ul>
                 </div>
                  <div class="mb-6">
                     <h3 class="text-xl font-semibold text-white">Front Desk Supervisor</h3>
                     <p class="text-gray-400 mb-2">The Grand Summit Hotel - Summit, NJ | (Mar 2015 - Feb 2016)</p>
                     <ul class="list-disc list-inside text-gray-300 space-y-1 pl-4">
-                        <li>Promoted from Guest Service Agent to Supervisor, leading front office staff and assisting the reservations manager with revenue forecasting and system controls.</li>
+                        <li>Promoted based on technical aptitude and problem-solving capabilities, leading front office operations team and providing analytical support for revenue forecasting systems.</li>
+                        <li>Collaborated with management on system optimization and control processes, contributing to the development of automated workflows and performance monitoring protocols.</li>
+                        <li>Mentored junior staff on technical procedures and system operations, developing training protocols that improved team efficiency and reduced operational errors.</li>
+                    </ul>
+                </div>
+                 <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-white">Guest Service Agent</h3>
+                    <p class="text-gray-400 mb-2">The Grand Summit Hotel - Summit, NJ | (Oct 2013 - Mar 2015)</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1 pl-4">
+                        <li>Operated multiple integrated software systems simultaneously, managing real-time data entry and system coordination while maintaining high accuracy standards under time pressure.</li>
+                        <li>Diagnosed and resolved complex customer service issues through systematic troubleshooting and root-cause analysis, often involving technical system limitations.</li>
+                        <li>Collaborated with technical maintenance teams to identify and report system issues, contributing to continuous improvement of operational processes and guest experience.</li>
                     </ul>
                 </div>
                  <div class="mb-6">
                     <h3 class="text-xl font-semibold text-white">Manager's Assistant</h3>
                     <p class="text-gray-400 mb-2">Van den Hout Automaten - Dordrecht, NL | (Oct 2012 - Aug 2013)</p>
                     <ul class="list-disc list-inside text-gray-300 space-y-1 pl-4">
-                        <li>Analyzed and organized product data to support financial modeling and sales offers; applied problem-solving to improve product order fulfillment efficiency.</li>
+                        <li>Conducted comprehensive data analysis and product database management to support financial modeling and strategic business development initiatives.</li>
+                        <li>Applied systematic problem-solving methodologies to optimize supply chain processes, resulting in measurable improvements to order fulfillment efficiency and cost reduction.</li>
+                        <li>Developed automated data processing workflows that streamlined product information management and enhanced accuracy of financial projections and sales proposals.</li>
                     </ul>
                 </div>
             </div>
@@ -234,29 +377,13 @@
             <div class="mb-8">
                 <h2 class="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">Languages</h2>
                 <ul class="list-disc list-inside text-gray-300 space-y-1 pl-4">
-                    <li>Dutch (Fluent)</li>
                     <li>English (Fluent)</li>
+                    <li>Dutch (Fluent)</li>
                     <li>German (Intermediate)</li>
                 </ul>
             </div>
 
 
-            <div class="text-center mt-12">
-                <a href="assets/documents/Koen_Schreij_Resume.pdf" download="Koen_Schreij_Resume.pdf" class="btn-primary text-white font-bold py-3 px-6 rounded-lg transition duration-300 no-underline">
-                    Download PDF Resume
-                </a>
-            </div>
-        </div>
-    </div>
-
-            <div class="text-center mt-8">
-                <a href="assets/resume.pdf" class="btn-primary text-white font-bold py-3 px-6 rounded-lg transition duration-300 mr-4 focus:ring-2 focus:ring-blue-500 focus:outline-none" aria-label="Download Koen Schreij's resume as PDF" download>
-                    📄 Download Resume
-                </a>
-                <a href="contact.html" class="btn-secondary text-white font-bold py-3 px-6 rounded-lg transition duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" aria-label="Contact Koen Schreij">
-                    ✉️ Contact Me
-                </a>
-            </div>
         </div>
     </main>
 
@@ -264,7 +391,7 @@
     <footer class="bg-gray-800 border-t border-gray-700 mt-16" role="contentinfo">
         <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <p class="text-gray-400">&copy; 2024 Koen Schreij. All rights reserved.</p>
+                <p class="text-gray-400">&copy; 2025 Koen Schreij. All rights reserved.</p>
                 <div class="flex justify-center space-x-6 mt-4">
                     <a href="https://github.com/stayzeef" class="text-gray-400 hover:text-white transition duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -277,7 +404,12 @@
                         </svg>
                     </a>
                     <a href="https://www.printables.com/@stayzeef/models" class="text-gray-400 hover:text-white transition duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" aria-label="Printables Profile" target="_blank" rel="noopener noreferrer">
-                        <span class="text-lg">🖨️</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M7 2v20h2V12h6v10h2V2h-2v8H9V2H7zm3 3h4v3h-4V5z"/>
+                            <rect x="4" y="16" width="16" height="2"/>
+                            <rect x="6" y="18" width="12" height="2"/>
+                            <rect x="8" y="20" width="8" height="2"/>
+                        </svg>
                     </a>
                 </div>
             </div>
