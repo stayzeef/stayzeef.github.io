@@ -219,3 +219,100 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #6b7280;
 }
+
+/* =========================================
+   Print Stylesheet
+   (Applied only when printing or saving to PDF)
+   ========================================= */
+@media print {
+    /* 1. Page Setup */
+    @page {
+        margin: 0.5in; /* Standard document margins */
+        size: letter;
+    }
+
+    /* 2. Hide Website UI Elements */
+    nav, 
+    footer, 
+    button, 
+    .btn-primary, 
+    #mobile-menu, 
+    .sr-only {
+        display: none !important;
+    }
+
+    /* 3. Invert Colors (Dark Mode -> White Paper) */
+    body, 
+    main, 
+    .bg-gray-900, 
+    .bg-gray-800 {
+        background-color: white !important;
+        color: #111827 !important; /* Almost black for readability */
+        background-image: none !important;
+    }
+
+    /* 4. Reset Layout for Full Width */
+    #main-content {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        box-shadow: none !important;
+    }
+
+    /* 5. Typography & Headings */
+    h1, h2, h3, h4, h5, h6 {
+        color: #000000 !important; /* Pure black for headers */
+    }
+    
+    p, li, span, div {
+        color: #374151 !important; /* Dark gray for body text */
+        text-shadow: none !important;
+    }
+
+    h2 {
+        border-bottom: 2px solid #000 !important; /* Thicker, darker underline for sections */
+        padding-bottom: 5px !important;
+    }
+
+    /* 6. Fix Links */
+    a {
+        color: #2563eb !important; /* Professional blue */
+        text-decoration: none !important;
+    }
+    /* Optional: Hide URL footprint if href is printed next to link
+       a[href]:after { content: none !important; } 
+    */
+
+    /* 7. Skills Grid Transformation */
+    /* Turns the dark gray boxes into clean outlined chips */
+    .grid > div {
+        background-color: white !important;
+        border: 1px solid #9ca3af !important; /* Medium gray border */
+        color: #000 !important;
+        box-shadow: none !important;
+        padding: 4px 8px !important; /* Adjust padding for print density */
+    }
+    
+    .grid > div > strong {
+        color: #000 !important;
+    }
+
+    /* 8. Certification Box Fix */
+    .bg-gray-700 {
+        background-color: white !important;
+        border: 1px solid #e5e7eb !important;
+        color: black !important;
+    }
+
+    /* 9. Page Break Control */
+    /* Ensures headers don't get separated from their content */
+    h2, h3 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+    
+    section, .mb-6 {
+        break-inside: avoid; /* Tries to keep job entries on one page */
+    }
+}
