@@ -43,7 +43,6 @@
                     <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Home</a>
                     <a href="portfolio.html" class="text-white bg-gray-900 px-3 py-2 rounded-md text-sm font-medium nav-link" aria-current="page">Portfolio</a>
                     <a href="resume.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Resume</a>
-                    <a href="shop.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Shop</a>
                     <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-link">Contact</a>
                 </div>
             </div>
@@ -53,7 +52,6 @@
                     <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
                     <a href="portfolio.html" class="text-white bg-gray-900 block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Portfolio</a>
                     <a href="resume.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Resume</a>
-                    <a href="shop.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Shop</a>
                     <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
                 </div>
             </div>
@@ -68,6 +66,31 @@
         <section class="mb-16">
             <h2 class="text-3xl font-bold text-white mb-8 border-b border-gray-700 pb-4">Electronics Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Wellness Guardian Project Card -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 project-card">
+                    <div class="h-36 bg-gray-700 overflow-hidden flex items-center justify-center p-4">
+                        <img src="assets/images/projects/wellnessguardian/guardian.png" alt="Wellness-Guardian" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Wellness Guardian</h3>
+                        <p class="text-gray-400 mb-4">
+                            A portable, gamified embedded fitness tracker that translates physical activity into a virtual economy. Features a custom-designed PCB utilizing an ESP32-S3 and 6-axis IMU, modular C++ firmware, and optimized load-sharing power management. All health metrics are processed entirely locally to ensure complete data privacy.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded">ESP32-S3</span>
+                            <span class="bg-green-600 text-white text-xs font-semibold px-2 py-1 rounded">Custom PCB</span>
+                            <span class="bg-purple-600 text-white text-xs font-semibold px-2 py-1 rounded">C++</span>
+                            <span class="bg-yellow-600 text-white text-xs font-semibold px-2 py-1 rounded">Embedded</span>
+                            <span class="bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">3D Printing</span>
+                            <span class="bg-gray-600 text-white text-xs font-semibold px-2 py-1 rounded">Offline-First</span>
+                        </div>
+                        <a href="wellnessguardian.html" class="text-blue-400 hover:text-blue-300 font-medium">
+                            View Details →
+                        </a>
+                    </div>
+                </div>
+
                 <!-- RC-Gamepad-Dongle Project Card -->
                 <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 project-card">
                     <div class="h-36 bg-gray-700 overflow-hidden flex items-center justify-center p-4">
@@ -122,6 +145,23 @@
         <section>
             <h2 class="text-3xl font-bold text-white mb-8 border-b border-gray-700 pb-4">3D Modeling & Printing</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+                <!-- Concrete Coaster Mold -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 project-card">
+                    <div class="h-48 bg-gray-700 overflow-hidden">
+                        <img src="assets/images/3d-prints/coaster.jpg" alt="Concrete Coaster Mold" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Concrete Coaster Mold</h3>
+                        <p class="text-gray-400 mb-4">
+                            A customizable 3D-printable mold for creating professional-looking concrete coasters at home. The modular, 3-part design includes a swappable face plate for custom designs.
+                        </p>
+                        <a href="https://www.printables.com/model/1723120-customizable-concrete-coaster-mold" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded transition duration-300 inline-block">
+                            Download on Printables
+                        </a>
+                    </div>
+                </div>
+
                 <!-- SeaRescue Catamaran -->
                 <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 project-card">
                     <div class="h-48 bg-gray-700 overflow-hidden">

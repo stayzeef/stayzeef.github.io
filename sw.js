@@ -9,7 +9,7 @@ const urlsToCache = [
   '/index.html',
   '/portfolio.html',
   '/resume.html',
-  '/shop.html',
+  '/wellnessguardian.html',
   '/contact.html',
   '/assets/styles.css',
   '/assets/enhanced-styles.css',
